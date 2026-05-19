@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/body/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 1px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+p {
+    line-height: 1.7;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* HEADER */
+
+header {
+    padding: 0 20px;
+    height: 10vh;
+    background-color: rgb(252, 237, 209);
+    /* position: sticky; 
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; */
+}
+
+/* logo conectado con el index */
+.logo {
+    width: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    color: rgb(1, 36, 1);
+}
+
+/* lista de las paginas */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(1, 36, 1);
+    font-weight: bold;
+}
+
+/* home */
+.portada {
+    height: 118.5vh;
+}
+
+.home {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(1, 36, 1);
+    font-size: 2rem;
+}
+
+.home p {
+    width: 90vw;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.home-cont {
+    display: flex;
+    flex-direction: column;
+} 
+
+.home-list {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.home-list li {
+    margin: 20px 0;
+}
+
+.home-sect {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(1, 36, 1); 
+}
+
+.home-img {
+    width: 15vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+    background-color: rgb(252, 237, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+/* logos de las redes sociales */
+.rs {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.rrss {
+    height: 5vh;
+    width: auto;
+}
+
+h2 {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.wap {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+} 
+
+/* CONTACTO */
+
+/* form. contacto */
+.cont {
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.form {
+    text-align: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 25vw;
+    height: 70vh;
+}
+
+/* GALERIA  */
+
+.galeria {
+    width: 80vw;
+    height: auto;
+
+}
+
+.ph {
+    border-radius: 20px;
+    object-fit: cover;
+    transform-origin: center center;
+    border-radius: 15px;
+    transition: transform 2s;
+}
+
+/* PERSONAJES  */
+
+.chars {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.char-tittle {
+    font-size: 2rem;
+    color: rgb(13, 65, 13)
+}
+
+.characters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 50px;
+}
+
+.char {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.char-name {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.char-img {
+    width: 15vw;
+}
+
+.char-desc {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.char-desc b {
+    color: rgb(13, 65, 13);
+
+}
+
+.home-p {
+    font-size: 1.5rem;
+}
+
+/* PELICULAS  */
+.t-peliculas {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(13, 65, 13);
+}
+
+/* Responsive  */
+@media (min-width: 480px) and (max-width: 1023px) {
+    footer {
+        flex-direction: column;
+    }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+    .home-cont {
+        flex-direction: column;
+    }
+
+    .portada {
+        height: 20vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
