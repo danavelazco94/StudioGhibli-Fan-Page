@@ -297,6 +297,23 @@ iframe {
     /* personajes  */
     /* galeria  */
     /* contacto  */
+    .cont {
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .form {
+        width: 80vw;
+        order: 1;
+    }
+
+    iframe {
+        width: 40vw;
+        order: 2;
+    }
+
     footer {
         flex-direction: column;
     }
