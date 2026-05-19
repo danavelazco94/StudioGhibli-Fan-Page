@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 
 }
 
@@ -136,6 +137,33 @@ h1 {
     height: auto;
     border-radius: 10px;
 }
+
+.contenido-carousel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center; 
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.texto-carousel {
+    font-size: 1rem;
+}
+
+.img-peliculas {
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+h4 {
+    font-size: 20px;
+}
+
 
 
 /* FOOTER */
