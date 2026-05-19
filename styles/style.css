@@ -15,13 +15,6 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
     letter-spacing: 1px;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -43,13 +36,6 @@ header {
     padding: 0 20px;
     height: 10vh;
     background-color: rgb(252, 237, 209);
-    /* position: sticky; 
-    top: 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px; */
 }
 
 /* logo conectado con el index */
@@ -142,13 +128,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-content: center;
-    text-align: center; 
+    text-align: center;
     gap: 50px;
     padding: 40px;
     flex-wrap: wrap;
 }
 
-.texto-carousel {
+.texto-carousel p {
+    line-height: 1.7;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     font-size: 1rem;
 }
 
@@ -368,7 +359,8 @@ iframe {
         width: 70vw;
     }
 
-    .home-list, .home-sect {
+    .home-list,
+    .home-sect {
         width: 80vw;
     }
 
@@ -380,8 +372,8 @@ iframe {
         width: 50vw;
     }
 
-    
-    
+
+
     /* peliculas  */
     /* personajes  */
     /* galeria  */
@@ -399,7 +391,7 @@ iframe {
         width: 80vw;
         order: 2;
     }
-    
+
     footer {
         flex-direction: column;
     }
