@@ -231,54 +231,124 @@ iframe {
 /* GALERIA  */
 
 /* PERSONAJES  */
-
 .chars {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.char-tittle {
-    font-size: 2rem;
-    color: rgb(13, 65, 13)
+.char, .char-title {
+  font-size: 2rem;
+  color: rgb(13, 65, 13)
 }
 
-.characters {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center;
-    gap: 50px;
+.chars .characters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
 }
 
-.char {
-    width: 20vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.chars .characters .card {
+  border-radius: 20px;
+  width: 350px;
+  height: 650px;
+  perspective: 1000px;
+  background-color: transparent;
+  border: transparent;
 }
-
-.char-name {
+.chars .characters .card:hover .flip {
+  transform: rotateY(180deg);
+}
+.chars .characters .card:nth-child(1) .front {
+  background-image: url(../assets/characters/p.totoro.png);
+}
+.chars .characters .card:nth-child(2) .front {
+  background-image: url(../assets/characters/p.chihiro.png);
+}
+.chars .characters .card:nth-child(3) .front {
+  background-image: url(../assets/characters/p.howl.png);
+}
+.chars .characters .card:nth-child(4) .front {
+  background-image: url(../assets/characters/p.calcifer.png);
+}
+.chars .characters .card:nth-child(5) .front {
+  background-image: url(../assets/characters/p.sinrostro.png);
+}
+.chars .characters .card:nth-child(6) .front {
+  background-image: url(../assets/characters/haku.png);
+}
+.chars .characters .card .flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.chars .characters .card .flip .front, .chars .characters .card .flip .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 8px 16px 32px black;
+}
+.chars .characters .card .flip .front {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.chars .characters .card .flip .back {
+  color: black;
+  transform: rotateY(180deg);
+}
+.chars .characters .card .flip .back .char-name {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: rgb(13, 65, 13);
+    font-weight: bold;
 }
-
-.char-img {
-    width: 15vw;
-}
-
-.char-desc {
+.chars .characters .card .flip .back .char-desc {
+    color: black;
     font-weight: bold;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
-.char-desc b {
-    color: rgb(13, 65, 13);
+@media (min-width: 480px) and (max-width: 967px) {
+  .chars .characters .card {
+    width: 40vw;
+    height: 75vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .char-title {
+    font-size: 1.5rem;
+  }
 
+  .chars .characters .card {
+    width: 60vw;
+    height: 70vh;
+  }
+  .chars .characters .card .flip .back .char-name {
+    font-size: 1rem;
+  }
+  .chars .characters .card .flip .back .char-desc {
+    font-size: 0.8rem;
+  }
 }
 
 .home-p {
@@ -463,6 +533,20 @@ iframe {
   transform: scale(1.5);
 }
 
+@media (min-width: 480px) and (max-width: 967px) {
+  .gal {
+    grid-template-areas: "v1 v2" "v1 v2" "h1 h1" "h1 h1" "h2 h2" "h2 h2" "h3 h3" "h3 h3" "v3 v4" "v3 v4" "h4 h4" "h4 h4" "h5 h5" "h5 h5" "v5 v6" "v5 v6" "h6 h6" "h6 h6" "v7 v8" "v7 v8" "h7 h7" "h7 h7";
+  }
+  .gal .h {
+    width: 80vw;
+    height: auto;
+  }
+  .gal .v {
+    width: 45vw;
+    height: auto;
+  }
+}
+
 @media (min-width: 300px) and (max-width: 479px) {
      .gal {
     grid-template-areas: "v1" "v2" "h1" "h2" "h3" "v3" "v4" "h4" "h5" "v5" "v6" "h6" "v7" "v8" "h7";
@@ -475,4 +559,10 @@ iframe {
     width: 80vw;
     height: auto;
   }
+}
+
+@media (min-width: 480px) and (max-width: 967px) {
+    .portada {
+        height: 40vh;
+    }
 }

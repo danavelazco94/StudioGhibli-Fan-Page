@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg .bg-danger-subtle">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -43,73 +43,122 @@
                 </div>
             </div>
         </nav>
-    </header class="sticky-top">
+    </header>
     <main class="chars">
-        <h2 class="char-tittle">Conoce a los personajes que hacen único al mundo Ghibli</h2>
+        <h2 class="char-title">Conoce a los personajes que hacen único al mundo Ghibli</h2>
         <section class="characters">
-            <article class="char">
-                <h3 class="char-name">Totoro</h3>
-                <img src="../assets/characters/p.totoro.png" alt="Imagen del personaje Totoro" class="char-img">
-                <p class="char-desc"> <b>Totoro</b> es una criatura mágica y amistosa que vive en el bosque cercano a la
-                    casa de Satsuki y Mei. Aunque su apariencia es grande e imponente, en realidad es un ser tranquilo,
-                    protector y muy tierno. Representa la conexión con la naturaleza, la imaginación y la inocencia de
-                    la infancia. A lo largo de la película acompaña a las niñas en momentos importantes, transmitiendo
-                    calma, alegría y asombro. Su diseño y personalidad lo convirtieron en uno de los personajes más
-                    queridos e icónicos de Studio Ghibli.</p>
-            </article>
-            <article class="char">
-                <h3 class="char-name">Chihiro</h3>
-                <img src="../assets/characters/p.chihiro.png" alt="Imagen del personaje Chihiro" class="char-img">
-                <p class="char-desc"> <b>Chihiro</b> Chihiro es una niña de diez años que, al inicio de la historia, se
-                    muestra insegura, tímida y temerosa ante los cambios de su vida. Sin embargo, cuando queda atrapada
-                    en un mundo espiritual lleno de criaturas mágicas, comienza un enorme proceso de crecimiento
-                    personal. A lo largo de su aventura aprende a ser valiente, responsable y perseverante. Su personaje
-                    representa la madurez, la importancia de conservar la identidad y la capacidad de superar los miedos
-                    incluso en situaciones difíciles.</p>
-            </article>
-            <article class="char">
-                <h3 class="char-name">Howl</h3>
-                <img src="../assets/characters/p.howl.png" alt="Imagen del personaje Howl" class="char-img">
-                <p class="char-desc"> <b>Howl</b> es un poderoso mago conocido por su elegancia, misterio y habilidades
-                    mágicas extraordinarias. A simple vista parece alguien seguro de sí mismo y despreocupado, pero en
-                    realidad es una persona sensible, emocional y con miedo a perder su libertad. Vive en un enorme
-                    castillo ambulante junto a Calcifer y evita involucrarse en conflictos, especialmente en la guerra
-                    que afecta al mundo que lo rodea. A lo largo de la historia muestra un gran desarrollo emocional
-                    gracias a su relación con Sophie, aprendiendo a proteger a los demás y enfrentar sus propios
-                    temores.</p>
-            </article>
-            <article class="char">
-                <h3 class="char-name">Calcifer</h3>
-                <img src="../assets/characters/p.calcifer.png" alt="Imagen del personaje Calcifer" class="char-img">
-                <p class="char-desc"> <b>Calcifer</b> es un demonio de fuego que vive dentro del castillo ambulante y es
-                    la fuente de energía que le da vida y movimiento. Tiene una personalidad divertida, sarcástica y
-                    algo caprichosa, pero también demuestra ser leal y sensible con quienes lo rodean. Aunque suele
-                    comportarse de manera cómica, guarda un importante secreto relacionado con Howl y su pasado. Gracias
-                    a su carisma y expresiones únicas, Calcifer se convirtió en uno de los personajes más memorables y
-                    queridos de la película.</p>
-            </article>
-            <article class="char">
-                <h3 class="char-name">Sin Rostro</h3>
-                <img src="../assets/characters/p.sinrostro.png" alt="Imagen del personaje Sin rostro" class="char-img">
-                <p class="char-desc"> <b>Sin rostro</b> es un espíritu solitario y silencioso que aparece en el mundo
-                    espiritual durante la aventura de Chihiro. A pesar de su aspecto extraño e inquietante, no es un
-                    personaje malvado, sino alguien que busca compañía y comprensión. Su comportamiento cambia
-                    dependiendo de las personas y del ambiente que lo rodea, mostrando cómo la soledad y la necesidad de
-                    aceptación pueden afectar a alguien. A lo largo de la historia desarrolla un vínculo especial con
-                    Chihiro, quien lo trata con amabilidad y respeto cuando nadie más lo hace. Gracias a su diseño
-                    misterioso y simbolismo emocional, Sin Rostro se convirtió en uno de los personajes más emblemáticos
-                    de Studio Ghibli.</p>
-            </article>
-            <article class="char">
-                <h3 class="char-name">Haku</h3>
-                <img src="../assets/characters/haku.png" alt="Imagen del personaje Haku" class="char-img">
-                <p class="char-desc"> <b>Haku</b> es un joven misterioso que trabaja para Yubaba en el mundo espiritual
-                    y que desde el principio ayuda a Chihiro a sobrevivir en ese lugar desconocido. Tiene la capacidad
-                    de transformarse en un dragón blanco y posee grandes habilidades mágicas. Aunque aparenta ser serio
-                    y reservado, demuestra ser protector, amable y muy valiente. Su historia está profundamente
-                    relacionada con los recuerdos, la identidad y el pasado olvidado. La relación que desarrolla con
-                    Chihiro es una de las conexiones más importantes y emotivas de la película.</p>
-            </article>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Totoro</h3>
+                        <p class="char-desc"> <b>Totoro</b> es una criatura mágica y amistosa que vive en el bosque
+                            cercano a la
+                            casa de Satsuki y Mei. Aunque su apariencia es grande e imponente, en realidad es un ser
+                            tranquilo,
+                            protector y muy tierno. Representa la conexión con la naturaleza, la imaginación y la
+                            inocencia de
+                            la infancia. A lo largo de la película acompaña a las niñas en momentos importantes,
+                            transmitiendo
+                            calma, alegría y asombro. Su diseño y personalidad lo convirtieron en uno de los personajes
+                            más
+                            queridos e icónicos de Studio Ghibli.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Chihiro</h3>
+                        <p class="char-desc"> <b>Chihiro</b> Chihiro es una niña de diez años que, al inicio de la
+                            historia, se
+                            muestra insegura, tímida y temerosa ante los cambios de su vida. Sin embargo, cuando queda
+                            atrapada
+                            en un mundo espiritual lleno de criaturas mágicas, comienza un enorme proceso de crecimiento
+                            personal. A lo largo de su aventura aprende a ser valiente, responsable y perseverante. Su
+                            personaje
+                            representa la madurez, la importancia de conservar la identidad y la capacidad de superar
+                            los miedos
+                            incluso en situaciones difíciles.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Howl</h3>
+                        <p class="char-desc"> <b>Howl</b> es un poderoso mago conocido por su elegancia, misterio y
+                            habilidades
+                            mágicas extraordinarias. A simple vista parece alguien seguro de sí mismo y despreocupado,
+                            pero en
+                            realidad es una persona sensible, emocional y con miedo a perder su libertad. Vive en un
+                            enorme
+                            castillo ambulante junto a Calcifer y evita involucrarse en conflictos, especialmente en la
+                            guerra
+                            que afecta al mundo que lo rodea. A lo largo de la historia muestra un gran desarrollo
+                            emocional
+                            gracias a su relación con Sophie, aprendiendo a proteger a los demás y enfrentar sus propios
+                            temores.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Calcifer</h3>
+                        <p class="char-desc"> <b>Calcifer</b> es un demonio de fuego que vive dentro del castillo
+                            ambulante y es
+                            la fuente de energía que le da vida y movimiento. Tiene una personalidad divertida,
+                            sarcástica y
+                            algo caprichosa, pero también demuestra ser leal y sensible con quienes lo rodean. Aunque
+                            suele
+                            comportarse de manera cómica, guarda un importante secreto relacionado con Howl y su pasado.
+                            Gracias
+                            a su carisma y expresiones únicas, Calcifer se convirtió en uno de los personajes más
+                            memorables y
+                            queridos de la película.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Sin Rostro</h3>
+                        <p class="char-desc"> <b>Sin rostro</b> es un espíritu solitario y silencioso que aparece en el
+                            mundo
+                            espiritual durante la aventura de Chihiro. A pesar de su aspecto extraño e inquietante, no
+                            es un
+                            personaje malvado, sino alguien que busca compañía y comprensión. Su comportamiento cambia
+                            dependiendo de las personas y del ambiente que lo rodea, mostrando cómo la soledad y la
+                            necesidad de
+                            aceptación pueden afectar a alguien. A lo largo de la historia desarrolla un vínculo
+                            especial con
+                            Chihiro, quien lo trata con amabilidad y respeto cuando nadie más lo hace. Gracias a su
+                            diseño
+                            misterioso y simbolismo emocional, Sin Rostro se convirtió en uno de los personajes más
+                            emblemáticos
+                            de Studio Ghibli.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="card">
+                <article class="flip">
+                    <div class="front"></div>
+                    <div class="back">
+                        <h3 class="char-name">Haku</h3>
+                        <p class="char-desc"> <b>Haku</b> es un joven misterioso que trabaja para Yubaba en el mundo espiritual
+                            y que desde el principio ayuda a Chihiro a sobrevivir en ese lugar desconocido. Tiene la capacidad
+                            de transformarse en un dragón blanco y posee grandes habilidades mágicas. Aunque aparenta ser serio
+                            y reservado, demuestra ser protector, amable y muy valiente. Su historia está profundamente
+                            relacionada con los recuerdos, la identidad y el pasado olvidado. La relación que desarrolla con
+                            Chihiro es una de las conexiones más importantes y emotivas de la película.</p>
+                    </div>
+                </article>
+            </section>
         </section>
 
     </main>
