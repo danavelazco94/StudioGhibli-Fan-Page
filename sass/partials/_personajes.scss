@@ -1,0 +1,139 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.chars {
+    @include m.flex(column, nowrap, center, center, 50px);
+
+    .char-title {
+        font-size: 2rem;
+        color: v.$color;
+    }
+
+    .characters {
+        @include m.flex(row, wrap, space-around, center, 50px);
+
+        .card {
+            border-radius: 20px;
+            width: 350px;
+            height: 650px;
+            perspective: 1000px;
+            background-color: transparent;
+            border: transparent;
+
+            &:hover .flip {
+                transform: rotateY(180deg);
+            }
+
+            &:nth-child(1) .front {
+                background-image: url(../assets/characters/p.totoro.png);
+            }
+
+            &:nth-child(2) .front {
+                background-image: url(../assets/characters/p.chihiro.png);
+            }
+
+            &:nth-child(3) .front {
+                background-image: url(../assets/characters/p.howl.png);
+            }
+
+            &:nth-child(4) .front {
+                background-image: url(../assets/characters/p.calcifer.png);
+            }
+
+            &:nth-child(5) .front {
+                background-image: url(../assets/characters/p.sinrostro.png);
+            }
+
+            &:nth-child(6) .front {
+                background-image: url(../assets/characters/haku.png);
+            }
+
+            .flip {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s ease;
+                transform-style: preserve-3d;
+
+                .front,
+                .back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px;
+                    box-shadow: 8px 16px 32px black;
+
+                }
+
+                .front {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .back {
+                    color: black;
+                    transform: rotateY(180deg);
+
+                    .char-name {
+                        text-align: center;
+                        font-size: 1.8rem;
+                        color: v.$color;
+                        font-weight: bold;
+                    }
+
+                    .char-desc {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                    }
+                }
+
+            }
+        }
+    }
+    @include m.note {
+        .characters {
+            .card {
+                width: 40vw;
+                height: 75vh;
+            }
+        }
+    }
+    @include m.tablet {
+        .characters {
+            .card {
+                width: 40vw;
+                height: 75vh;
+            }
+        }
+    }
+    @include m.mobile {
+        .characters {
+            .card {
+                width: 60vw;
+                height: 70vh;
+                .flip {
+                    .back {
+                        .char-name {
+                            font-size: 1rem;
+                        }
+                        .char-desc {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

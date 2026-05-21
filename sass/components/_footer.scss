@@ -1,0 +1,42 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+footer {
+    margin-top: 20px;
+    height: 10vh;
+    background-color: rgb(252, 237, 209);
+    @extend %exflex;
+    justify-content: space-around;
+    border-radius: 10px;
+
+    nav {
+        .rs {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            li {
+                a{
+                    .rrss{
+                        height: 5vh;
+                        width: auto;
+                    }
+                    .rrss.wap{
+                        position: fixed;
+                        right: 50px;
+                        bottom: 50px;
+                    }
+                }
+            }
+
+        }
+    }
+    @include m.tablet {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    @include m.mobile {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

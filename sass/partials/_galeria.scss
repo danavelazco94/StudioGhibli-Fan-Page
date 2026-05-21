@@ -1,0 +1,210 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.gal {
+    display: grid;
+    grid-template-areas:
+        "v1 h1 h1 v2"
+        "v1 h1 h1 v2"
+        "h2 h2 h3 h3"
+        "h2 h2 h3 h3"
+        "v3 h4 h4 v4"
+        "v3 h4 h4 v4"
+        "v5 h5 h5 h5"
+        "v5 h5 h5 h5"
+        "h6 h6 h6 v6"
+        "h6 h6 h6 v6"
+        "v7 h7 h7 v8"
+        "v7 h7 h7 v8"
+    ;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+
+    section {
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .h {
+        width: 45vw;
+        height: auto;
+    }
+
+    .v {
+        width: 22vw;
+        height: 70vh;
+    }
+
+    .h1 {
+        grid-area: h1;
+    }
+
+    .h2 {
+        grid-area: h2;
+    }
+
+    .h3 {
+        grid-area: h3;
+    }
+
+    .h4 {
+        grid-area: h4;
+    }
+
+    .h5 {
+        grid-area: h5;
+    }
+
+    .h6 {
+        grid-area: h6;
+    }
+
+    .h7 {
+        grid-area: h7;
+    }
+
+    .v1 {
+        grid-area: v1;
+    }
+
+    .v2 {
+        grid-area: v2;
+    }
+
+    .v3 {
+        grid-area: v3;
+    }
+
+    .v4 {
+        grid-area: v4;
+    }
+
+    .v5 {
+        grid-area: v5;
+    }
+
+    .v6 {
+        grid-area: v6;
+    }
+
+    .v7 {
+        grid-area: v7;
+    }
+
+    .v8 {
+        grid-area: v8;
+    }
+
+    img {
+        border-radius: 15px;
+        object-fit: cover;
+        transition: transform 2s ease;
+        transform-origin: center;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    @include m.note {
+        grid-template-areas:
+            "v1 v2"
+            "v1 v2"
+            "h1 h1"
+            "h1 h1"
+            "h2 h2"
+            "h2 h2"
+            "h3 h3"
+            "h3 h3"
+            "v3 v4"
+            "v3 v4"
+            "h4 h4"
+            "h4 h4"
+            "h5 h5"
+            "h5 h5"
+            "v5 v6"
+            "v5 v6"
+            "h6 h6"
+            "h6 h6"
+            "v7 v8"
+            "v7 v8"
+            "h7 h7"
+            "h7 h7"
+            ;
+        .h{
+            width: 80vw;
+            height: auto;
+        }
+        .v{
+            width: 45vw;
+            height: auto;
+        }
+    }
+    @include m.tablet {
+        grid-template-areas:
+            "v1 v2"
+            "v1 v2"
+            "h1 h1"
+            "h1 h1"
+            "h2 h2"
+            "h2 h2"
+            "h3 h3"
+            "h3 h3"
+            "v3 v4"
+            "v3 v4"
+            "h4 h4"
+            "h4 h4"
+            "h5 h5"
+            "h5 h5"
+            "v5 v6"
+            "v5 v6"
+            "h6 h6"
+            "h6 h6"
+            "v7 v8"
+            "v7 v8"
+            "h7 h7"
+            "h7 h7"
+        ;
+
+        .h {
+            width: 80vw;
+            height: auto;
+        }
+
+        .v {
+            width: 45vw;
+            height: auto;
+        }
+    }
+
+    @include m.mobile {
+        grid-template-areas:
+            "v1"
+            "v2"
+            "h1"
+            "h2"
+            "h3"
+            "v3"
+            "v4"
+            "h4"
+            "h5"
+            "v5"
+            "v6"
+            "h6"
+            "v7"
+            "v8"
+            "h7"
+        ;
+
+        .h {
+            width: 80vw;
+            height: auto;
+        }
+
+        .v {
+            width: 80vw;
+            height: auto;
+        }
+    }
+}

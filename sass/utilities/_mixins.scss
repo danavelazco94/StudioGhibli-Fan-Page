@@ -1,0 +1,39 @@
+//mixin de flex
+@mixin flex($dir, $wrap, $jc, $ai, $gap) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-content: $ai;
+    gap: $gap;
+}
+
+//mixin de notebook
+@mixin note {
+    @media (min-width: 968px) and (max-width: 1439px) {
+        @content;
+    }
+}
+
+//mixin de tablet 
+@mixin tablet {
+    @media (min-width: 480px) and (max-width: 967px) {
+        @content;
+    }
+}
+
+//mixin de mobile
+@mixin mobile {
+    @media (min-width: 300px) and (max-width: 479px) {
+        @content;
+    }
+}
+
+%exflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}

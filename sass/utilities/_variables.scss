@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+$fuente: Cinzel;
+$color: rgb(6, 78, 6);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+}
+
+body {
+    background-image: url(../assets/body/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    // overflow-x: hidden;
+    padding: 0 40px;
+}

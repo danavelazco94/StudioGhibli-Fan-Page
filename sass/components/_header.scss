@@ -1,0 +1,59 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(252, 237, 209);
+    border-radius: 10px;
+
+    .navbar {
+        .container-fluid {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .navbar-brand {
+                .logo {
+                    height: 8vh;
+                    ;
+                    width: auto;
+                }
+            }
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            transition: all 0.3s ease;
+                            border-radius: 10px;
+                            display: inline-block;
+                            padding: 6px 12px;
+
+                            &:hover {
+                                background-color: v.$color;
+                                color: #ffffff;
+                                transform: scale(1.05);
+                            }
+                        }
+
+                        .nav-link.active {
+                            color: v.$color;
+
+                            &:hover {
+                                background-color: v.$color;
+                                color: #ffffff;
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include m.mobile {
+            h1 {
+                display: none;
+            }
+        }
+    }
+}
