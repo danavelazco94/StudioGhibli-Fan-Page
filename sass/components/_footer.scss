@@ -1,5 +1,6 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+@use "../utilities/animaciones";
 
 footer {
     margin-top: 20px;
@@ -24,6 +25,7 @@ footer {
                         position: fixed;
                         right: 50px;
                         bottom: 50px;
+                        animation: vibrate 2s ease infinite;
                     }
                 }
             }
