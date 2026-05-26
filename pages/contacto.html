@@ -4,34 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
 
     <title>Contacto | Studio Ghibli Fan Page</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../assets/body/logo.jpg" type="image/x-icon">
+
     <!-- SEO -->
-    <meta name="description" content="Ponte en contacto con esta fan page de Studio Ghibli y comparte tus opiniones, comentarios y experiencias sobre sus películas y personajes más icónicos. Un espacio inspirado en la magia, la fantasía y el encanto del universo Ghibli.">
-    <meta name="keywords" content="contacto Studio Ghibli, fan page Ghibli, comentarios Studio Ghibli, películas Ghibli, Hayao Miyazaki, Studio Ghibli fans, universo Ghibli, Studio Ghibli community">
+    <meta name="description"
+        content="Ponte en contacto con esta fan page de Studio Ghibli y comparte tus opiniones, comentarios y experiencias sobre sus películas y personajes más icónicos. Un espacio inspirado en la magia, la fantasía y el encanto del universo Ghibli.">
+    <meta name="keywords"
+        content="contacto Studio Ghibli, fan page Ghibli, comentarios Studio Ghibli, películas Ghibli, Hayao Miyazaki, Studio Ghibli fans, universo Ghibli, Studio Ghibli community">
     <meta name="author" content="Dana Velazco">
     <meta name="owner" content="Studio Ghibli">
 
     <!-- OPEN GRAPH  -->
     <meta property="og:title" content="Contacto | Studio Ghibli Fan Page">
     <meta property="og:url" content="https://danavelazco94.github.io/StudioGhibli-Fan-Page/pages/contacto.html">
-    <meta property="og:image" content="https://raw.githubusercontent.com/danavelazco94/StudioGhibli-Fan-Page/refs/heads/main/assets/body/logo.jpg">
-    <meta property="og:description" content="Ponte en contacto con esta fan page de Studio Ghibli y comparte tus opiniones, comentarios y experiencias sobre sus películas y personajes más icónicos. Un espacio inspirado en la magia, la fantasía y el encanto del universo Ghibli.">
-
-</head>
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/danavelazco94/StudioGhibli-Fan-Page/refs/heads/main/assets/body/logo.jpg">
+    <meta property="og:description"
+        content="Ponte en contacto con esta fan page de Studio Ghibli y comparte tus opiniones, comentarios y experiencias sobre sus películas y personajes más icónicos. Un espacio inspirado en la magia, la fantasía y el encanto del universo Ghibli.">
 </head>
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg .bg-danger-subtle">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/body/inicio.png" class="logo" alt="Logo de la página">
+                    <img src="../assets/body/inicio.png" class="logo" alt="Logo de Studio Ghibli Fan Page">
                 </a>
                 <h1 class="text-success-emphasis">GHIBLI's WORLD</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,7 +53,8 @@
                             <a class="nav-link fs-6 fw-semibold" href="./galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-6 fw-semibold" aria-current="page"  href="./contacto.html">Contacto</a>
+                            <a class="nav-link active fs-6 fw-semibold" aria-current="page"
+                                href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -59,6 +63,7 @@
     </header>
 
     <main class="cont">
+        <h2 class="cont-title text-center fw-bold">CONTACTANOS</h2>
         <iframe class="contacto"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.4753860883793!2d-55.896586584176205!3d-27.36905232572921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be368f21b4f5%3A0xb8d3e6b24c6e0e22!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1776027688971!5m2!1ses!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -66,19 +71,19 @@
 
         <form action="" class="form">
             <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="John">
+            <input id="nombre" type="text" placeholder="John" required>
 
             <label for="surname">Apellido</label>
-            <input id="surname" type="text" placeholder="Doe">
+            <input id="surname" type="text" placeholder="Doe" required>
 
             <label for="mail">e-Mail</label>
-            <input id="mail" type="email" placeholder="Johndoe@gmail.com">
+            <input id="mail" type="email" placeholder="Johndoe@gmail.com" required>
 
             <label for="pass">Contraseña</label>
-            <input type="password" id="pass" placeholder="**********">
+            <input type="password" id="pass" placeholder="**********" required>
 
             <label for="coment">Comentarios</label>
-            <input id="coment" type="text" placeholder="Agregue su comentario...">
+            <textarea id="coment" type="text" placeholder="Agregue su comentario..."></textarea>
 
             <article class="btns">
                 <input type="submit" value="Enviar" class="form-btn">
@@ -88,14 +93,14 @@
 
         <iframe class="contacto" data-testid="embed-iframe" style="border-radius:12px"
             src="https://open.spotify.com/embed/playlist/6ABOS16Y6EJxn7NFxWzric?utm_source=generator" width="100%"
-            height="352" frameBorder="0" allowfullscreen=""
+            height="352" style="border:0;" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
     </main>
     <footer>
-        <h4 class="fw-bolder">Derechos Reservados</h4>
-        <h4 class="fw-bolder">Página creada por Dana 😊</h4>
+        <p class="fw-bolder">Derechos Reservados</p>
+        <p class="fw-bolder">Página creada por Dana 😊</p>
         <nav>
             <ul class="rs">
                 <li>

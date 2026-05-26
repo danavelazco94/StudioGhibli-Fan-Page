@@ -7,13 +7,26 @@
     gap: 60px;
     color: v.$color;
 
+    .cont-title {
+        font-size: 2rem;
+        color: v.$color;
+    }
+
     .form {
         text-align: center;
         width: 40vw;
         @include m.flex(column, nowrap, center, center, 20px);
+
         input {
             width: auto;
             text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            resize: none;
+
         }
 
         .btns {
@@ -32,42 +45,52 @@
             }
         }
     }
+
     iframe {
         width: 25vw;
         height: 80vh;
     }
+
     @include m.note {
         flex-wrap: wrap;
         font-size: 1.3rem;
         font-weight: bold;
+
         .form {
             width: 80vw;
             order: 1;
         }
+
         iframe {
             width: 40vw;
             order: 2;
         }
     }
+
     @include m.tablet {
         flex-wrap: wrap;
         font-size: 1.3rem;
         font-weight: bold;
+
         .form {
             width: 80vw;
             order: 1;
         }
+
         iframe {
             width: 35vw;
             order: 2;
         }
     }
+
     @include m.mobile {
         flex-direction: column;
+
         .form {
             width: 80vw;
             order: 1;
         }
+
         iframe {
             width: 80vw;
             order: 2;

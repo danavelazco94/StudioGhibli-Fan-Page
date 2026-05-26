@@ -3,8 +3,8 @@
 
 .movies {
     padding: 0 20px;
+
     .movie-title {
-        text-align: center;
         font-size: 2rem;
         color: v.$color;
     }
@@ -49,9 +49,11 @@
             right: -40px;
         }
     }
+
     @include m.mobile {
         .contenido-carousel {
             width: 80vw;
+
             .img-peliculas {
                 width: 20vh;
                 height: 100vh;

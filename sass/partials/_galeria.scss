@@ -1,23 +1,28 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
+.gal-title {
+    font-size: 2rem;
+    color: v.$color;
+}
+
 .gal {
     display: grid;
     grid-template-areas:
-        "v1 h1 h1 v2"
-        "v1 h1 h1 v2"
-        "h2 h2 h3 h3"
-        "h2 h2 h3 h3"
-        "v3 h4 h4 v4"
-        "v3 h4 h4 v4"
-        "v5 h5 h5 h5"
-        "v5 h5 h5 h5"
-        "h6 h6 h6 v6"
-        "h6 h6 h6 v6"
-        "v7 h7 h7 v8"
-        "v7 h7 h7 v8"
+        "item8 item1 item1 item9"
+        "item8 item1 item1 item9"
+        "item2 item2 item3 item3"
+        "item2 item2 item3 item3"
+        "item10 item4 item4 item11"
+        "item10 item4 item4 item11"
+        "item12 item5 item5 item5"
+        "item12 item5 item5 item5"
+        "item6 item6 item6 item13"
+        "item6 item6 item6 item13"
+        "item14 item7 item7 item15"
+        "item14 item7 item7 item15"
     ;
-    justify-content: space-around;
+    justify-content: center;
     justify-items: center;
     align-items: center;
     gap: 20px;
@@ -27,74 +32,70 @@
         border-radius: 15px;
     }
 
-    .h {
-        width: 45vw;
-        height: auto;
-    }
-
+    .h,
     .v {
-        width: 22vw;
-        height: 70vh;
+        width: 100%;
+        height: 100%;
     }
 
-    .h1 {
-        grid-area: h1;
+    .item1 {
+        grid-area: item1;
     }
 
-    .h2 {
-        grid-area: h2;
+    .item2 {
+        grid-area: item2;
     }
 
-    .h3 {
-        grid-area: h3;
+    .item3 {
+        grid-area: item3;
     }
 
-    .h4 {
-        grid-area: h4;
+    .item4 {
+        grid-area: item4;
     }
 
-    .h5 {
-        grid-area: h5;
+    .item5 {
+        grid-area: item5;
     }
 
-    .h6 {
-        grid-area: h6;
+    .item6 {
+        grid-area: item6;
     }
 
-    .h7 {
-        grid-area: h7;
+    .item7 {
+        grid-area: item7;
     }
 
-    .v1 {
-        grid-area: v1;
+    .item8 {
+        grid-area: item8;
     }
 
-    .v2 {
-        grid-area: v2;
+    .item9 {
+        grid-area: item9;
     }
 
-    .v3 {
-        grid-area: v3;
+    .item10 {
+        grid-area: item10;
     }
 
-    .v4 {
-        grid-area: v4;
+    .item11 {
+        grid-area: item11;
     }
 
-    .v5 {
-        grid-area: v5;
+    .item12 {
+        grid-area: item12;
     }
 
-    .v6 {
-        grid-area: v6;
+    .item13 {
+        grid-area: item13;
     }
 
-    .v7 {
-        grid-area: v7;
+    .item14 {
+        grid-area: item14;
     }
 
-    .v8 {
-        grid-area: v8;
+    .item15 {
+        grid-area: item15;
     }
 
     img {
@@ -107,64 +108,68 @@
             transform: scale(1.5);
         }
     }
+
     @include m.note {
         grid-template-areas:
-            "v1 v2"
-            "v1 v2"
-            "h1 h1"
-            "h1 h1"
-            "h2 h2"
-            "h2 h2"
-            "h3 h3"
-            "h3 h3"
-            "v3 v4"
-            "v3 v4"
-            "h4 h4"
-            "h4 h4"
-            "h5 h5"
-            "h5 h5"
-            "v5 v6"
-            "v5 v6"
-            "h6 h6"
-            "h6 h6"
-            "v7 v8"
-            "v7 v8"
-            "h7 h7"
-            "h7 h7"
-            ;
-        .h{
+            "item8 item9"
+            "item8 item9"
+            "item1 item1"
+            "item1 item1"
+            "item2 item2"
+            "item2 item2"
+            "item3 item3"
+            "item3 item3"
+            "item10 item11"
+            "item10 item11"
+            "item4 item4"
+            "item4 item4"
+            "item5 item5"
+            "item5 item5"
+            "item12 item13"
+            "item12 item13"
+            "item6 item6"
+            "item6 item6"
+            "item14 item15"
+            "item14 item15"
+            "item7 item7"
+            "item7 item7"
+        ;
+
+        .h {
             width: 80vw;
             height: auto;
         }
-        .v{
+
+        .v {
             width: 45vw;
             height: auto;
         }
     }
+
     @include m.tablet {
         grid-template-areas:
-            "v1 v2"
-            "v1 v2"
-            "h1 h1"
-            "h1 h1"
-            "h2 h2"
-            "h2 h2"
-            "h3 h3"
-            "h3 h3"
-            "v3 v4"
-            "v3 v4"
-            "h4 h4"
-            "h4 h4"
-            "h5 h5"
-            "h5 h5"
-            "v5 v6"
-            "v5 v6"
-            "h6 h6"
-            "h6 h6"
-            "v7 v8"
-            "v7 v8"
-            "h7 h7"
-            "h7 h7"
+            "item8 item9"
+            "item8 item9"
+            "item1 item1"
+            "item1 item1"
+            "item2 item2"
+            "item2 item2"
+            "item3 item3"
+            "item3 item3"
+            "item10 item11"
+            "item10 item11"
+            "item4 item4"
+            "item4 item4"
+            "item5 item5"
+            "item5 item5"
+            "item12 item13"
+            "item12 item13"
+            "item6 item6"
+            "item6 item6"
+            "item14 item15"
+            "item14 item15"
+            "item7 item7"
+            "item7 item7"
         ;
 
         .h {
@@ -180,21 +185,21 @@
 
     @include m.mobile {
         grid-template-areas:
-            "v1"
-            "v2"
-            "h1"
-            "h2"
-            "h3"
-            "v3"
-            "v4"
-            "h4"
-            "h5"
-            "v5"
-            "v6"
-            "h6"
-            "v7"
-            "v8"
-            "h7"
+            "item8"
+            "item9"
+            "item1"
+            "item2"
+            "item3"
+            "item10"
+            "item11"
+            "item4"
+            "item5"
+            "item12"
+            "item13"
+            "item6"
+            "item14"
+            "item15"
+            "item7"
         ;
 
         .h {

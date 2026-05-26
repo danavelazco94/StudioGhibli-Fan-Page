@@ -95,12 +95,14 @@
                         font-weight: bold;
                         font-size: 1rem;
                         line-height: 1.6;
+                        text-overflow: ellipsis;
                     }
                 }
 
             }
         }
     }
+
     @include m.note {
         .characters {
             .card {
@@ -109,6 +111,7 @@
             }
         }
     }
+
     @include m.tablet {
         .characters {
             .card {
@@ -117,16 +120,19 @@
             }
         }
     }
+
     @include m.mobile {
         .characters {
             .card {
                 width: 60vw;
                 height: 70vh;
+
                 .flip {
                     .back {
                         .char-name {
                             font-size: 1rem;
                         }
+
                         .char-desc {
                             font-size: 0.8rem;
                         }
